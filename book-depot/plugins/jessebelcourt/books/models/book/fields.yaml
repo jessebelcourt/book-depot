@@ -14,6 +14,8 @@ fields:
     book_cover:
         label: 'Book Cover'
         mode: image
+        imageWidth: '150'
+        imageHeight: '200'
         useCaption: true
         thumbOptions:
             mode: crop
