@@ -1,0 +1,16 @@
+title = "Books"
+url = "/books"
+layout = "default"
+is_hidden = 0
+
+[builderList]
+modelClass = "JesseBelcourt\Books\Models\Book"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "name"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
+{% component 'builderList' %}

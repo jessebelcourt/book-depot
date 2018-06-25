@@ -1,0 +1,15 @@
+FROM php:7.2.5-fpm
+
+RUN apt-get update && \
+    apt-get install -y \
+        zlib1g-dev
+
+RUN docker-php-ext-install \
+	mbstring \
+	pdo \
+	pdo_mysql \
+	# openssl \
+	# curl
+	# zlib \
+	zip
+	# gd

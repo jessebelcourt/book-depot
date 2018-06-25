@@ -1,0 +1,10 @@
+name: Books
+form: $/jessebelcourt/books/models/book/fields.yaml
+modelClass: JesseBelcourt\Books\Models\Book
+defaultRedirect: jessebelcourt/books/books
+create:
+    redirect: 'jessebelcourt/books/books/update/:id'
+    redirectClose: jessebelcourt/books/books
+update:
+    redirect: jessebelcourt/books/books
+    redirectClose: jessebelcourt/books/books

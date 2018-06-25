@@ -1,0 +1,4 @@
+title: Books
+modelClass: JesseBelcourt\Books\Models\Book
+toolbar:
+    buttons: reorder_toolbar

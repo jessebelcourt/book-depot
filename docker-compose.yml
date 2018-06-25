@@ -1,0 +1,37 @@
+version: '3'
+
+services:
+
+  web:
+    image: nginx
+    ports:
+      - "80:80"
+    volumes:
+      - "./book-depot:/book-depot"
+      - "./env-config/site.conf:/etc/nginx/conf.d/site.conf"
+    depends_on:
+      - php
+      - db
+
+  php:
+    build:
+      context: ./env-config
+      dockerfile: Dockerfile-php
+    volumes:
+      - "./book-depot:/book-depot"
+
+  db:
+    image: mysql
+    restart: always
+    environment:
+      - MYSQL_DATABASE=devdb
+      - MYSQL_ROOT_PASSWORD=devdbpassword
+      - MYSQL_USER=devdbuser
+      - MYSQL_PASSWORD=devdbpassword
+    volumes:
+      - "bookdepotdb:/var/lib/mysql"
+
+volumes:
+  bookdepotdb:
+
+

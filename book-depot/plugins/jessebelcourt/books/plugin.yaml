@@ -1,0 +1,11 @@
+plugin:
+    name: 'jessebelcourt.books::lang.plugin.name'
+    description: 'jessebelcourt.books::lang.plugin.description'
+    author: 'Jesse Belcourt'
+    icon: oc-icon-book
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: 'jessebelcourt.books::lang.plugin.name'
+        url: jessebelcourt/books/books
+        icon: icon-book

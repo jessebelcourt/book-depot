@@ -1,0 +1,9 @@
+fields:
+    name:
+        label: 'Book Title'
+        span: full
+        type: text
+    author:
+        label: Author
+        span: full
+        type: text
