@@ -7,3 +7,16 @@ fields:
         label: Author
         span: full
         type: text
+    amazon_link:
+        label: 'Amazon Link'
+        span: auto
+        type: text
+    book_cover:
+        label: 'Book Cover'
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload

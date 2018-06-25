@@ -1,5 +1,5 @@
 title = "Books"
-url = "/books"
+url = "/"
 layout = "default"
 is_hidden = 0
 
@@ -13,4 +13,15 @@ detailsPage = "-"
 detailsUrlParameter = "id"
 pageNumber = "{{ :page }}"
 ==
-{% component 'builderList' %}
+{% set records = builderList.records %}
+
+<ul>
+	{% for record in records %}
+		<li>
+			<div>
+				<h2>{{ record.name }}</h2>
+				<img src="{{ record.book_cover.path }}">
+			</div>
+		</li>
+	{% endfor %}
+</ul>

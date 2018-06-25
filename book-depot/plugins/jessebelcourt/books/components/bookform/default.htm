@@ -1,0 +1,22 @@
+<form method="POST" action="{{ url('add-books') }}" enctype="multipart/form-data">
+	<input type="hidden" name="_handler" value="onSave">
+	{{ form_token() }}
+	{{ form_sessionKey() }}
+	<div class="form-group">
+		<label for="book-title">Book Title</label>
+		<input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Enter book title here..." name="name">
+	</div>
+	<div class="form-group">
+		<label for="Author">Author</label>
+		<input type="text" class="form-control" placeholder="Author's name here..." name="author">
+	</div>
+	<div class="form-group">
+		<label for="amazon_link">Amazon Link</label>
+		<input type="text" class="form-control" placeholder="Enter url to book on Amazon" name="amazon_link">
+	</div>
+	<div class="form-group">
+		<label>Book Cover</label>
+		<input type="file" class="form-control-file" name="book_cover">
+	</div>
+	<button type="submit" class="btn btn-primary">Submit</button>
+</form>
