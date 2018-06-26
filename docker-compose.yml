@@ -20,14 +20,6 @@ services:
     volumes:
       - "./book-depot:/book-depot"
 
-  composer:
-    image: composer
-    volumes:
-      - "./book-depot:/book-depot"
-    command: >
-      bash -c "cd /book-depot/book-depot && composer install &&
-      php artisan october:up"
-
   db:
     image: mysql
     restart: always
