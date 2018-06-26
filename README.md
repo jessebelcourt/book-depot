@@ -20,9 +20,11 @@ Add this line to you /etc/hosts file:
 
 `docker container run -v $(pwd):/book-depot --rm -w /book-depot composer composer install`
 
+This will take a couple min.
+
 ## Add .env files
 
-Add the provided via email. (more here)
+Add providid .env file to `book-depot/book-depot` (October project root).
 
 ## Start Env
 
