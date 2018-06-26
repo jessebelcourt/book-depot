@@ -47,3 +47,12 @@ From root of project (same level as docker-compose.yml):
 ## Check it out!
 
 [book-depot](http://book-depot/)
+
+## About
+
+This project's environment is built using Docker. There are containers for PHP, an Nginx web server, and the MySQL database engine. You can upload related book meta-data through the 'Add Book' page that will show up on the 'Books' page. The image can be any size, and will be automatically formatted to fit the display on the frontend. There is form validation on the backend making sure fields can't be empty, and the file is an image etc. You should see those errors if the form is not filled out correctly.
+
+Since it seems important to get this project in sooner than later, I'm going to hand this in now, but some next steps would be some more robust editing/deleting features for the user. Some sorting/searching abilty. Fine tuning automatic image processing, or some editing tool for the user to adjust their own image etc. so the display image isn't so fuzzy.
+
+
+
